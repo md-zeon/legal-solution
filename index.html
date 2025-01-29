@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,19 +26,142 @@
 				theme: {
 					extend: {
 						colors: {
-							'muddy-water': '#b68c5A',
+							"muddy-water": "#b68c5A",
+                            "title": "#414040",
+                            "description": "#707070",
 						},
-                        fontFamily: {
-                            'font-poppins': ['Poppins', 'serif'],
-                            'font-garamond': ['EB Garamond', 'serif'],
-                        }
+						fontFamily: {
+							"font-poppins": ["Poppins", "serif"],
+							"font-garamond": ["EB Garamond", "serif"],
+						},
 					},
 				},
 			};
 		</script>
 	</head>
 	<body>
-		<header></header>
+		<header class="max-w-[73.125rem] mx-auto">
+			<!-- Navbar Start -->
+			<nav class="my-12">
+				<div class="navbar bg-base-100">
+					<div class="navbar-start">
+						<!-- Dropdown Start -->
+						<div class="dropdown">
+							<div
+								tabindex="0"
+								role="button"
+								class="btn btn-ghost lg:hidden"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									class="h-5 w-5"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M4 6h16M4 12h8m-8 6h16"
+									/>
+								</svg>
+							</div>
+                            <!-- Dropdown Links Start -->
+							<ul
+								tabindex="0"
+								class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+							>
+								<li><a>Home</a></li>
+								<li>
+									<a>Services</a>
+									<ul class="p-2">
+										<li><a>Submenu 1</a></li>
+										<li><a>Submenu 2</a></li>
+									</ul>
+								</li>
+								<li>
+                                    <a>Cases</a>
+                                    <ul class="p-2">
+										<li><a>Submenu 1</a></li>
+										<li><a>Submenu 2</a></li>
+									</ul>
+                                </li>
+                                <li>
+                                    <a>Blog</a>
+									<ul class="p-2">
+										<li><a>Submenu 1</a></li>
+										<li><a>Submenu 2</a></li>
+									</ul>
+                                </li>
+                                <li>
+                                    <a>Contact Us</a>
+									<ul class="p-2">
+										<li><a>Submenu 1</a></li>
+										<li><a>Submenu 2</a></li>
+									</ul>
+                                </li>
+							</ul>
+                            <!-- Dropdown Links End -->
+						</div>
+						<!-- Dropdown End -->
+
+						<!-- Logo  -->
+						<a class="text-xl cursor-pointer"><img src="images/logo2.png" alt="logo"></a>
+					</div>
+
+					<!-- Nav Links Start-->
+					<div class="navbar-center hidden lg:flex">
+						<ul class="menu menu-horizontal px-1 text-description">
+							<li><a class="hover:bg-transparent hover:text-muddy-water">Home</a></li>
+							<li>
+								<details>
+									<summary class="hover:bg-transparent hover:text-muddy-water">Services</summary>
+									<ul class="p-2">
+										<li><a class="hover:bg-transparent hover:text-muddy-water">Submenu 1</a></li>
+										<li><a class="hover:bg-transparent hover:text-muddy-water">Submenu 2</a></li>
+									</ul>
+								</details>
+							</li>
+							<li>
+								<details>
+									<summary class="hover:bg-transparent hover:text-muddy-water">Cases</summary>
+									<ul class="p-2">
+										<li><a class="hover:bg-transparent hover:text-muddy-water">Submenu 1</a></li>
+										<li><a class="hover:bg-transparent hover:text-muddy-water">Submenu 2</a></li>
+									</ul>
+								</details>
+							</li>
+							<li>
+								<details>
+									<summary class="hover:bg-transparent hover:text-muddy-water">Blog</summary>
+									<ul class="p-2">
+										<li><a class="hover:bg-transparent hover:text-muddy-water">Submenu 1</a></li>
+										<li><a class="hover:bg-transparent hover:text-muddy-water">Submenu 2</a></li>
+									</ul>
+								</details>
+							</li>
+							<li>
+								<details>
+									<summary class="hover:bg-transparent hover:text-muddy-water">Contact Us</summary>
+									<ul class="p-2">
+										<li><a class="hover:bg-transparent hover:text-muddy-water">Submenu 1</a></li>
+										<li><a class="hover:bg-transparent hover:text-muddy-water">Submenu 2</a></li>
+									</ul>
+								</details>
+							</li>
+						</ul>
+					</div>
+					<!-- NavLinks End -->
+
+					<!-- Consultation Button  -->
+					<div class="navbar-end">
+						<a class="btn sm:h-auto rounded-lg bg-muddy-water text-white hover:bg-transparent hover:text-muddy-water border !border-muddy-water sm:px-7 sm:py-4 font-semibold text-lg">Free Consultation</a>
+					</div>
+				</div>
+			</nav>
+			<!-- Navbar End -->
+		</header>
 		<main></main>
 		<footer></footer>
 	</body>
