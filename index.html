@@ -56,7 +56,7 @@
 		</style>
 	</head>
 	<body class="font-poppins">
-		<header class="max-w-[73.125rem] mx-auto">
+		<header class="max-w-[73.125rem] mx-auto px-4">
 			<!-- Navbar Start -->
 			<nav class="my-12">
 				<div class="navbar bg-base-100">
@@ -257,7 +257,7 @@
 							available, but the majority have suffered alteration
 							in some form, by injected humour.
 						</p>
-						<div class="flex gap-6">
+						<div class="flex gap-1 sm:gap-6">
 							<input
 								class="px-4 sm:p-4 md:p-5 flex-1 max-w-lg w-[75%] rounded-lg placeholder:text-[#a0a0a0] placeholder:font-normal placeholder:text-sm placeholder:sm:text-base text-muddy-water caret-muddy-water font-medium"
 								type="search"
@@ -276,7 +276,7 @@
 			</div>
 			<!-- Banner End  -->
 		</header>
-		<main class="max-w-[73.125rem] mx-auto">
+		<main class="max-w-[73.125rem] mx-auto px-4">
 			<!-- Legal Practice Section Start -->
 			<section class="my-32">
 				<h1
@@ -868,7 +868,9 @@
 				</p>
 
 				<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-					<div class="grid grid-cols-2 gap-[.0625rem] bg-[#CFCFCF]">
+					<div
+						class="grid grid-cols-1 sm:grid-cols-2 gap-[.0625rem] bg-[#CFCFCF]"
+					>
 						<!-- Card 1 -->
 						<div class="card rounded-none bg-[#F3F3F3]">
 							<figure class="px-10 pt-10">
@@ -994,6 +996,91 @@
 			</section>
 			<!-- Contact Section End -->
 		</main>
-		<footer></footer>
+		<!-- Footer Start -->
+		<footer class="bg-[#111111] text-white py-32 px-4">
+			<div
+				class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4 max-w-[73.125rem] mx-auto"
+			>
+				<div>
+					<h6><img src="images/logo.png" alt="" /></h6>
+					<p class="text-[#CFCFCF] lg:max-w-64 mt-8">
+						There are many variations of passages of Lorem Ipsum
+						available, but the majority have suffered alteration in
+						some form, by injected humour.
+					</p>
+				</div>
+				<nav>
+					<h6 class="font-garamond text-2xl font-extrabold mb-12">
+						Useful Link
+					</h6>
+					<ul class="space-y-4 text-[#CFCFCF]">
+						<li>
+							<a class="link link-hover">Home</a>
+						</li>
+						<li>
+							<a class="link link-hover">About us</a>
+						</li>
+						<li>
+							<a class="link link-hover">Cases</a>
+						</li>
+						<li>
+							<a class="link link-hover">Blog</a>
+						</li>
+						<li>
+							<a class="link link-hover">Contact Us</a>
+						</li>
+					</ul>
+				</nav>
+				<nav>
+					<h6 class="font-garamond text-2xl font-extrabold mb-12">
+						Contact Now
+					</h6>
+					<ul class="space-y-4 text-[#CFCFCF]">
+						<li>
+							<a class="link link-hover">
+								555 4th 5t NW, Washington DC
+							</a>
+							<a class="link link-hover">
+								20530, United States
+							</a>
+						</li>
+						<li>
+							<a class="link link-hover"> +88 01750 000 000 </a>
+							<br />
+							<a class="link link-hover"> +88 01750 000 000 </a>
+						</li>
+						<li>
+							<a class="link link-hover"> info@gmail.com </a>
+							<br />
+							<a class="link link-hover"> info@gmail.com </a>
+						</li>
+					</ul>
+				</nav>
+				<form>
+					<h6 class="font-garamond text-2xl font-extrabold mb-12">
+						Subscribe
+					</h6>
+					<p class="text-[#cfcfcf] lg:max-w-52 mb-6">
+						Subscribe for our latest & Articles. We Won't Give You
+						Spam Mails
+					</p>
+					<fieldset class="form-control">
+						<div class="join">
+							<input
+								type="text"
+								placeholder="Email Address"
+								class="input input-bordered text-description join-item"
+							/>
+							<button
+								class="btn bg-muddy-water text-white join-item rounded-lg border-muddy-water hover:bg-transparent"
+							>
+								<i class="fa-solid fa-paper-plane"></i>
+							</button>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</footer>
+		<!-- Footer End -->
 	</body>
 </html>
